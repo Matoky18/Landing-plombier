@@ -45,6 +45,8 @@ a {
         gap: 25px;
     }
 
+    
+
 
     .hero-desktop {
         display: flex;
@@ -91,7 +93,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 150px;
+        /* gap: 150px; */
         /* background: mediumaquamarine; */
         width: 100%;
         border-radius: 50px;
@@ -100,6 +102,29 @@ a {
         border: 1px black solid ;
         height: calc(100vh - (60vh + 175px));
     }
+
+    .hero-desktop > ul > li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 0px 50px;
+    }
+
+    .hero-desktop > ul > li:nth-child(2) {
+        border-left: 1px black solid ;
+        border-right: 1px black solid ;
+        padding: 0px 50px;
+        margin: 0px 50px;
+    } 
+
+     .hero-desktop > ul > li > img {
+        width: 50px;
+        /* height: 100px; */
+    }
+
+    
 
 
 
