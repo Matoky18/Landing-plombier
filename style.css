@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 :root {
-    --primary-color-- : #801616 ;
+    --primary-color-- : #670A0A ;
 }
 
 
@@ -28,7 +29,355 @@ a {
     text-decoration: none;
 }
 
-@media (min-width:768px) {
+
+/* header mobile  */
+.header-mobile > svg {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color: whitesmoke;
+   
+}
+
+.header-mobile > h1 {
+    
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    color: whitesmoke;
+}
+
+
+/* header mobile fin */
+
+
+
+/* section hero mobile  */
+.hero-mobile {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 25px;
+    box-sizing: border-box;
+    height: 100vh;
+    background-image: url("/image/homeMobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.hero-mobile > .span > p {
+    font-family: "Roboto" ,serif;
+    text-align: center;
+}
+
+.hero-mobile > button {
+    position: absolute;
+    bottom: 25px;
+    height: 75px;
+    width: calc(100% - 50px);
+    max-width: 450px;
+    margin: 0px 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    background: var(--primary-color--);
+}
+
+/* section hero fin */
+
+
+
+/* section service mobile  */
+.section-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+    padding: 50px 25px;
+    box-sizing: border-box;
+    /* height: 100vh; */
+    width: 100%;
+    /* background: khaki; */
+}
+
+.section-service > h2 {
+    font-family:  "Roboto",serif;
+    font-weight: 400;
+
+}
+
+.section-service > span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0px 25px; */
+    overflow-x: hidden;
+    width: 100%;
+    /* background: hotpink; */
+
+}
+
+.section-service > span > ul {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 12.5px;
+    width: 90%;
+    /* flex-wrap: wrap; */
+    /* box-sizing: border-box; */
+    overflow-x: scroll;
+}
+
+.section-service > span > ul > li {
+    font-family: "Playfair Display" ,serif;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+    /* min-width: 350px; */
+    box-sizing: border-box;
+    height: 450px;
+    /* max-height: 80vh; */
+    flex: 0 0 auto;
+    border: solid 2px var(--primary-color--);
+}
+
+.section-service > span > ul > li > span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0px 12.5px;
+    padding-top: 12.5px;
+    /* background: olivedrab; */
+    height: 125px;
+    overflow-y: scroll;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-service > span > ul > li > .img {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100px; */
+}
+.section-service > span > ul > li:nth-child(1) > .img {
+    width: 100%;
+    height: 300px;
+    background-image: url("/image/chauffe-eau.png");
+    /* height: 100px; */
+}
+
+.section-service > .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+    /* background: #c9e93a; */
+    margin-top: 50px;
+
+}
+
+.section-service > .buttons > button {
+    width: 100%;
+    height: 50px;
+    max-width: 450px;
+    font-size: large;
+
+}   
+
+.section-service > .buttons > button:first-child {
+    background: var(--primary-color--);
+    color: whitesmoke;
+    border: 2px solid var(--primary-color--);
+    border-radius: 5px;
+}
+
+.section-service > .buttons > button:nth-child(2) {
+    background: transparent;
+    color: var(--primary-color--);
+    border: 2px solid var(--primary-color--);
+    border-radius: 5px;
+}
+
+/* section service mobile fin */
+
+
+
+
+
+
+/* section avantage mobile */
+.section-avantage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    padding-block: 50px;
+    background: var(--primary-color--);
+}
+
+.section-avantage > ul , h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 40%; */
+    height: 100%;
+    /* padding: 50px; */
+}
+
+.section-avantage > h2 {
+    background: #e2d183;
+    text-align: right;
+}
+
+.section-avantage > ul {
+    background: #4fd395;
+}
+
+
+/* section avantage fin */
+
+
+
+
+
+/* section avis mobile */
+.section-avis {
+   /* height: 100vh; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* justify-content: center; */
+   /* background: #87dfc1; */
+}
+
+.section-avis > h2 {
+    font-family: "Playfair Display" ,serif;
+}
+
+.section-avis > h2, .lien-avis {
+    display: flex;
+    flex-direction: column;
+    
+    /* background: #4506ac; */
+    height: fit-content;
+    padding: 0px;
+    
+    max-width: 350px;
+    margin-top: 25px;
+    width: calc(100% - 50px);
+}
+
+.section-avis svg {
+    width: 25px;
+    /* height: 50px; */
+    color: red;
+    
+}
+
+.section-avis > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 0px;
+    width: 100%;
+    /* background: #c9e93a; */
+}
+
+.section-avis > ul > li {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 50px);
+    max-width: 450px;
+    padding: 25px 25px;
+    background: var(--primary-color--);
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* margin: 25px 25px; */
+    box-sizing: border-box;
+    
+}
+
+.section-avis > ul > li > p:nth-child(2) {
+    font-family: "Playfair Display" ,serif;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 25px 0px;
+    letter-spacing: 8%;
+    text-align: center;
+    /* background: mediumseagreen; */
+    
+}
+
+.section-avis > ul > li > p:nth-child(3) {
+    font-family: "Roboto" ,serif;
+    font-weight: 200;
+    font-size: larger;
+} 
+
+/* section avis fin */
+
+
+
+
+
+/* section location  */
+
+.section-location {
+    width: 100%;
+}
+
+/* section location fin */
+
+
+
+
+
+
+
+
+/* footer  */
+footer {
+    height: 50vh;
+    background: gainsboro;
+}
+/* footer fin */
+
+@media (min-width:1024px) {
+
+    /* section header desktop */
+
+    .header-mobile {
+        display: none;
+    }
+    .hero-mobile {
+        display: none;
+    }
     .header-desktop {
         display: flex;
         align-items: center;
@@ -109,14 +458,19 @@ a {
         align-items: center;
         justify-content: center;
         gap: 25px;
-        padding: 0px 50px;
+        /* padding: 0px 50px; */
+        /* background: #e0c0c0; */
+        width: 250px;
+        text-align: center;
+        /* padding: 0px 25px; */
+        /* box-sizing: border-box; */
     }
 
     .hero-desktop > ul > li:nth-child(2) {
         border-left: 1px black solid ;
         border-right: 1px black solid ;
-        padding: 0px 50px;
-        margin: 0px 50px;
+        /* padding: 0px 50px; */
+        margin: 0px 5px;
     } 
 
      .hero-desktop > ul > li > img {
@@ -124,8 +478,64 @@ a {
         /* height: 100px; */
     }
 
-    
+    /* .hero-desktop > button {
+        height: 75px;
+        width: 350px;
+        position: relative;
+        bottom: calc(25px + 20vh);
+    } */
 
 
+
+    /* section service desktop  */
+    .section-service > span {
+        max-width: 1100px;
+        /* scrollbar-width: none; */
+    }
+
+
+    /* section service desktop fin */
+
+
+
+
+    /* section avis desktop  */
+
+    .section-avis {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-avis > ul {
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        /* background: peru; */
+        overflow-x: scroll;
+        /* padding: 50px 500px; */
+        height: auto;
+        width: 90%;
+        overflow-x: scroll;
+        box-sizing: border-box;
+    }
+
+    .section-avis > h2, .lien-avis {
+        width: 90%;
+        max-width: none;
+        /* margin: 0px ; */
+        /* background: magenta; */
+    }
+
+    .section-avis > ul > li {
+        width: 450px;
+        /* height: 250px; */
+        /* background: #c9e93a; */
+       
+        flex: 0 0 auto;
+    }
+
+
+
+    /* section avis desktop fin */
 
 }
