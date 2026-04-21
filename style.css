@@ -82,7 +82,12 @@ a {
 }
 
 .hero-mobile > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
+    gap: 25px;
+    font-size: larger;
     bottom: 25px;
     height: 75px;
     width: calc(100% - 50px);
@@ -93,9 +98,23 @@ a {
     color: whitesmoke;
     border: 2px solid whitesmoke;
     background: var(--primary-color--);
+    font-weight: normal;
+}
+
+.hero-mobile > button > svg {
+    
+    width: 25px;
 }
 
 /* section hero fin */
+
+
+
+
+
+
+
+
 
 
 
@@ -107,7 +126,6 @@ a {
     width: 100%;
     padding: 50px 25px;
     box-sizing: border-box;
-    /* height: 100vh; */
     width: 100%;
     /* background: khaki; */
 }
@@ -128,39 +146,40 @@ a {
     justify-content: center;
     /* margin: 0px 25px; */
     overflow-x: hidden;
-    width: 100%;
+    width: 90%;
     /* background: hotpink; */
 
 }
 
 .section-service > span > ul {
     display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 12.5px;
-    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
     /* flex-wrap: wrap; */
     /* box-sizing: border-box; */
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 }
 
 .section-service > span > ul > li {
     font-family: "Playfair Display" ,serif;
-    display: flex;
-    
+    display: flex;    
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    max-width: 350px;
-    width: 90%;
+    max-width: 450px;
+    width: 100%;
     box-sizing: border-box;
     height: 450px;
     flex: 0 0 auto;
     border: solid 2px var(--primary-color--);
 }
 
-.section-service > span > ul > li:nth-child(4) , .section-service > span > ul > li:nth-child(5)  {
+.section-service > span > ul > li:nth-child(4) , .section-service > span > ul > li:nth-child(5) ,  .section-service > span > ul > li:nth-child(6) {
+    /* background: red; */
     display: none;
 }
 
@@ -168,11 +187,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-items: center;
     gap: 25px;
     padding: 0px 12.5px;
-    padding-top: 12.5px;
+    padding-top: 25px;
     /* background: olivedrab; */
-    height: 125px;
+    height: 150px;
     overflow-y: scroll;
     width: 100%;
     box-sizing: border-box;
@@ -236,31 +256,66 @@ a {
 /* section avantage mobile */
 .section-avantage {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30vh;
-    padding-block: 50px;
-    background: var(--primary-color--);
+    margin-top: 50px;
+
+    
 }
 
 .section-avantage > ul , h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background: lawngreen; */
     /* width: 40%; */
-    height: 100%;
     /* padding: 50px; */
 }
 
 .section-avantage > h2 {
-    background: #e2d183;
-    text-align: right;
+    /* background: #e2d183; */
+    text-align: center;
+    font-family: "Caveat" ,serif;
+    color: var(--primary-color--);
+    border-bottom: 1px solid var(--primary-color--);
+    width: 90%;
+    max-width: 450px;
+    
+    margin-bottom: 50px;
+    padding-bottom: 12.5px;
 }
 
 .section-avantage > ul {
-    background: #4fd395;
+    /* background: #4fd395; */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+    max-width: 450px;
+    margin-bottom: 50px;
 }
 
+.section-avantage > ul > li {
+    font-family: "Roboto" , serif;
+    display: flex;
+    /* gap: 50px; */
+    align-items: center;
+    justify-content: space-between;
+    padding-inline : 25px ;
+    box-sizing: border-box;
+    background: #F3F3F3;
+    height: 75px;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.section-avantage > ul > li > img {
+    width: 50px;
+}
+
+.section-avantage > ul > li:nth-child(3) > img , .section-avantage > ul > li:nth-child(4) > img {
+    width: 40px;
+}
 
 /* section avantage fin */
 
@@ -611,10 +666,28 @@ footer > p > svg {
 
 
     /* section service desktop  */
-    .section-service > span {
-        max-width: 1100px;
+    .section-service > span > ul {
+        /* max-width: 1100px; */
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        /* background: mediumvioletred; */
         
     }
+
+    .section-service > span > ul > li {
+        max-width: 350px;
+        width: 30%;
+    }
+
+     .section-service > span > ul > li > span {
+        justify-content: center;
+        height: 150px;
+        padding-block: 12.5px;
+        /* background: mediumspringgreen; */
+     }
 
     .section-service > h2 {
         text-align: center;
@@ -701,4 +774,53 @@ footer > p > svg {
 
     /* section avis desktop fin */
 
+
+
+
+    /* section avantage desktop  */
+     .section-avantage {
+        gap: 50px;
+        box-sizing: border-box;
+        align-items: center;
+         justify-content: center;
+         width: 100%;
+         /* margin: 0px; */
+         margin-bottom: 50px;
+        padding-block: 50px;
+
+         padding-inline: 100px;
+         background: #F3F3F3;
+         height: auto;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .section-avantage > h2 {
+        margin-bottom: 25px;
+      
+    }
+
+    .section-avantage > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        margin: 0px;
+        /* background: #4ac01c; */
+    }
+    .section-avantage > ul > li {
+        width: 200px;
+        flex-direction: column;
+        height: 100px;
+        box-shadow: none;
+        /* background: red; */
+        padding: 0px;
+        flex: 0 0 auto;
+        /* background: none; */
+        ;
+    }
+    /* section avantage desktop fin */
+
 }
+
+
+
