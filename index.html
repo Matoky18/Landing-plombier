@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plombier à Lyon disponible 24h/7j. Dépannage rapide, devis gratuit. Appelez maintenant. Fuite, chauffe-eau, installation">
+    <meta name="description" content="Plombier à Lieu disponible 24h/7j. Dépannage rapide, devis gratuit. Appelez maintenant. Fuite, chauffe-eau, installation">
     <title>Landing page d'un plombier</title>
 
     <script src="script.js" defer></script>
@@ -26,30 +26,36 @@
     </header>
 
     <header class="header-mobile" >
-        <h1>Plombier Lyon</h1>
+
+        <h1>Plombier Lieu</h1>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
     </header>
 
-    <section class="hero-desktop" >
+
+
+    <section class="hero-desktop" id="features">
+
         <div class="span">
+
             <p> Ça fuit ? J'arrive</p>
             <p>Votre voisin plombier, disponible quand vous avez besoin.</p>
+
+            <button>Appelez maintenant</button>
+
         </div>
         
         <ul>
-            <!-- <button>
-            Appelez maintenant
-        </button> -->
+            
             <li> 
                 <img src="/image/phone-icon.png" alt="">
                 06 12 34 56 78
             </li>
             <li>
                 <img src="/image/localisation-icon.png" alt="">
-                123 Rue de la Plomberie, Lyon</li>
+                123 Rue de la Plomberie, Lieu</li>
             <li> 
                 <img src="/image/mail-icon.png" alt="">
                 
@@ -57,7 +63,11 @@
         </ul>
     </section>
 
+
+
+
     <section class="hero-mobile" >
+
         <div class="span">
             <p> Ça fuit ? J'arrive</p>
             <p>Votre voisin plombier, disponible quand vous avez besoin.</p>
@@ -65,12 +75,21 @@
         <button>
             Appelez maintenant
         </button>
+
     </section>
 
-<section class="section-service" >
+
+
+
+<section class="section-service" id="service">
+
         <h2>Nos services</h2>
+
+
         <span>
+
             <ul>
+
                 <li>
                     <div class="img"></div>
                     <span>
@@ -81,6 +100,7 @@
                         </p>
                     </span>
                 </li>
+
                 <li>
                     <div class="img"></div>
                     <span>
@@ -91,6 +111,7 @@
                         </p>
                     </span>
                 </li>
+
                 <li>
                     <div class="img"></div>
                     <span>
@@ -101,10 +122,22 @@
                         </p>
                     </span>
                 </li>
+
                 <li>
                     <div class="img"></div>
                     <span>
                         <p>Chauffe-eau & chaudière</p>
+                        <p>
+                            Fuite, canalisation bouchée, robinet cassé. 
+                            Intervention le jour même.
+                        </p>
+                    </span>
+                </li>
+
+                <li>
+                    <div class="img"></div>
+                    <span>
+                        <p>Chauffe-eau & ballon</p>
                         <p>
                             Fuite, canalisation bouchée, robinet cassé. 
                             Intervention le jour même.
@@ -121,13 +154,16 @@
                         </p>
                     </span>
                 </li>
+
             </ul>
+            
         </span>
 
         <div class="buttons">
             <button>Contactez-nous</button>
             <button>Voir tous nos services</button>
         </div>
+
     </section>
 
 
@@ -148,7 +184,7 @@
     </section>
 
 
-    <section class="section-avis" >
+    <section class="section-avis" id="testimonials">
 
         <h2>Ils ont testé notre service de plomberie</h2>
         <div class="lien-avis">Avis certifié par Google</div>
@@ -257,16 +293,12 @@
 
             </li>
 
-
-
-
-
-
-            
-
-
-
+         
         </ul>
+
+        <span>
+            <button>Laisser un avis</button>
+        </span>
 
     </section>
 
@@ -274,25 +306,66 @@
 
 
 
-    <section class="section-location" >
-        
+    <section class="section-location" id="location">
+        <h2>Où nous trouver ?</h2>
+        <p>
+            Nous intervenons rapidement à Lieu et dans les communes voisines pour
+             tous vos besoins en plomberie.
+             Retrouvez-nous facilement grâce à notre localisation ci-dessous.
+        </p>
        
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.1234567890123!2d
             4.8357!3d45.7640!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4e1234567890%3A0x
             123456789abcdef0!2s123%20Rue%20de%20la%20Plomberie%2C%20Lyon%2C%20France!5e0!3m2!1sen!2s
-            us!4v1700000000000"  height="450" style="border:5;" allowfullscreen="true" 
+            us!4v1700000000000" 
+                    height="450" style="border:5;" allowfullscreen="true" 
             loading="lazy">
         
-            <h2>Où nous trouver ?</h2>
     
         </iframe>
+
+        <span>
+        <button>
+
+            Appelez maintenant
+        </button>
+    </span>
 
         
     </section>
 
 
-   
-    <footer>
+    
+
+
+   <footer>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+            </svg>
+            06 00 00 00 00
+
+        </p>
+
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+
+            Lun - Sam : 7h à 19h
+
+        </p>
+
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+
+            Intervention à Avignon et alentours
+
+        </p>
+
         <p> &copy; 2026 Plomberie Plombier. Tous droits réservés.</p>
     </footer>
 
