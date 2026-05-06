@@ -31,6 +31,7 @@ li {
 
 a {
     text-decoration: none;
+    color: whitesmoke;
 }
 
 
@@ -49,7 +50,7 @@ a {
     
     position: absolute;
     left: 25px;
-    top: 25px;
+    top: 30px;
     color: whitesmoke;
 }
 
@@ -76,12 +77,12 @@ a {
     color: whitesmoke;
 }
 
-.hero-mobile > .span > p {
+.hero-mobile > .span  p {
     font-family: "Roboto" ,serif;
     text-align: center;
 }
 
-.hero-mobile > button {
+.hero-mobile > a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,8 +102,7 @@ a {
     font-weight: normal;
 }
 
-.hero-mobile > button > svg {
-    
+.hero-mobile > a > svg {
     width: 25px;
 }
 
@@ -346,6 +346,11 @@ a {
    /* background: #87dfc1; */
 }
 
+.section-avis > .marquee {
+    height: 75vh;
+    overflow-y: scroll;
+}
+
 .section-avis > h2 {
     font-family: "Playfair Display" ,serif;
 }
@@ -370,7 +375,7 @@ a {
     
 }
 
-.section-avis > ul {
+.section-avis  ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,7 +386,7 @@ a {
     /* background: #c9e93a; */
 }
 
-.section-avis > ul > li {
+.section-avis  ul > li {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -395,10 +400,11 @@ a {
     border-radius: 10px;
     /* margin: 25px 25px; */
     box-sizing: border-box;
+    height: 250px;
     
 }
 
-.section-avis > ul > li > p:nth-child(2) {
+.section-avis  ul > li > p:nth-child(2) {
     font-family: "Playfair Display" ,serif;
     width: 100%;
     font-size: 0.9rem;
@@ -409,19 +415,26 @@ a {
     
 }
 
-.section-avis > ul > li > p:nth-child(3) {
+.section-avis  ul > li > p:nth-child(3) {
     font-family: "Roboto" ,serif;
     font-weight: 200;
     font-size: larger;
 } 
 
-.section-avis > span >button {
-        width: 225px;
-        height: 50px;
-        background: #E6E4E4;
-        border: none;
-        font-size: larger;
-        font-family: "Roboto" ,serif;
+.section-avis > span > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 100px);
+    max-width: 450px;
+    height: 50px;
+    background: #E6E4E4;
+    border: none;
+    font-size: larger;
+    border: 1px rgba(0, 0, 0, 0.39) solid;
+    font-family: "Roboto" ,serif;
+    color: rgba(0, 0, 0, 0.568);
+    margin-top: 25px;
 }
 
 /* section avis fin */
@@ -473,7 +486,10 @@ a {
     height: 50px;
 }
 
-.section-location > span > button {
+.section-location > span > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 90%;
     max-width: 450px;
@@ -481,7 +497,16 @@ a {
     background: none;
     font-size: larger;
     color: var(--primary-color--);
+    
 }
+
+.section-location > span > a:hover {
+    color: #000000;
+    background: rgba(128, 128, 128, 0.233);
+    transition: 0.5s ease;
+}
+
+
 
 /* section location fin */
 
@@ -728,6 +753,11 @@ footer > p > svg {
      }
 
 
+     .section-service > span > ul > li > span {
+        overflow-y: hidden;
+     }
+
+
     /* section service desktop fin */
 
 
@@ -741,7 +771,15 @@ footer > p > svg {
          margin-bottom: 100px;
     }
 
-    .section-avis > ul {
+
+    .section-avis > .marquee {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section-avis ul {
         display: flex;
         justify-content: start;
         flex-direction: row;
@@ -761,7 +799,7 @@ footer > p > svg {
         /* background: magenta; */
     }
 
-    .section-avis > ul > li {
+    .section-avis  ul > li {
         width: 450px;
         /* height: 250px; */
         /* background: #c9e93a; */
@@ -777,11 +815,15 @@ footer > p > svg {
     }
 
     
+    .section-avis > span >a {
+        width: 225px;
+    }
 
-    .section-avis > span >button:hover {
+    .section-avis > span >a:hover {
         /* background: #c9e93a; */
         color: rgba(0, 0, 0, 0.849);
         cursor: pointer;
+        transition: 0.5s ease;
     }
 
     /* section avis desktop fin */
