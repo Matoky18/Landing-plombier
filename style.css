@@ -802,6 +802,10 @@ footer > p > svg {
         /* background: mediumspringgreen; */
      }
 
+     .section-avis .groups  > ul:nth-child(2) {
+        display: flex;
+     }
+
     .section-service > h2 {
         text-align: center;
         color: rgba(0, 0, 0, 0.7);
@@ -864,7 +868,7 @@ footer > p > svg {
 
     .section-avis > .marquee .groups {
         overflow-x: auto ;
-
+        margin-top: 25px;
         display: flex;
         /* background: peachpuff; */
     }
@@ -881,7 +885,7 @@ footer > p > svg {
         height: auto;
         width: max-content;
         box-sizing: border-box;
-        animation: scroll 60s linear infinite;
+        animation: scroll 10s linear infinite;
 
     }
 
@@ -908,7 +912,7 @@ footer > p > svg {
         justify-content: end;
     }
 
-     .section-avis > .marquee::-webkit-scrollbar {
+     .section-avis > .marquee .groups::-webkit-scrollbar {
         display: none;
     }
     
