@@ -885,7 +885,7 @@ footer > p > svg {
         height: auto;
         width: max-content;
         box-sizing: border-box;
-        animation: scroll 10s linear infinite;
+        animation: scroll 7s linear infinite;
 
     }
 
@@ -897,9 +897,11 @@ footer > p > svg {
     }
 
     .section-avis  ul > li {
+        justify-content: center;
+        padding-block: 75px;
         width: 450px;
         flex: 0 0 450px;
-        /* height: 250px; */
+        height: 250px;
         /* background: #c9e93a; */
        
         
