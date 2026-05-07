@@ -885,7 +885,7 @@ footer > p > svg {
         height: auto;
         width: max-content;
         box-sizing: border-box;
-        animation: scroll 7s linear infinite;
+        animation: scroll 60s linear infinite;
 
     }
 
