@@ -16,6 +16,13 @@ html {
     scroll-behavior: smooth;
 }
 
+
+@keyframes scroll {
+    from {transform: translateX(0);}
+    to {transform: translateX(-100%);}
+}
+
+
 .header-desktop {
     display: none;
 }
@@ -777,19 +784,38 @@ footer > p > svg {
         align-items: center;
         justify-content: center;
         width: 100%;
+        height: fit-content;
+        overflow: hidden;
+        /* gap: 25px; */
+        /* box-sizing: border-box; */
+        /* background: palegoldenrod; */
+        
+        
+    }
+
+    .section-avis > .marquee .groups {
+        overflow-x: auto ;
+
+        display: flex;
+        /* background: peachpuff; */
+    }
+
+    .section-avis > .marquee .groups::-webkit-scrollbar {
+        display: none;
     }
 
     .section-avis ul {
         display: flex;
         justify-content: start;
         flex-direction: row;
+        padding-right: 25px;
         /* background: peru; */
-        overflow-x: scroll;
         /* padding: 50px 500px; */
         height: auto;
-        width: 90%;
-        overflow-x: scroll;
+        width: max-content;
         box-sizing: border-box;
+        animation: scroll 60s linear infinite;
+
     }
 
     .section-avis > h2, .lien-avis {
@@ -801,10 +827,11 @@ footer > p > svg {
 
     .section-avis  ul > li {
         width: 450px;
+        flex: 0 0 450px;
         /* height: 250px; */
         /* background: #c9e93a; */
        
-        flex: 0 0 auto;
+        
     }
 
     .section-avis > span {
@@ -817,6 +844,7 @@ footer > p > svg {
     
     .section-avis > span >a {
         width: 225px;
+        margin-top: 0px;
     }
 
     .section-avis > span >a:hover {
@@ -836,7 +864,8 @@ footer > p > svg {
         gap: 50px;
         box-sizing: border-box;
         align-items: center;
-         justify-content: center;
+        justify-content: flex-start;
+
          width: 100%;
          /* margin: 0px; */
          margin-bottom: 50px;
@@ -859,6 +888,7 @@ footer > p > svg {
         align-items: center;
         width: 50%;
         margin: 0px;
+        flex-shrink: 0;
         /* background: #4ac01c; */
     }
     .section-avantage > ul > li {
