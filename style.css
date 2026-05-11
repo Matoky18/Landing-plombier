@@ -80,11 +80,12 @@ a {
 
 
 .header-mobile > h1 {
-    
+    width: calc(100vw - 125px);
     position: absolute;
     left: 25px;
     top: 30px;
     color: whitesmoke;
+    /* background: red; */
 }
 
 
@@ -158,7 +159,9 @@ a {
     color: whitesmoke;
     border: 2px solid whitesmoke;
     background: var(--primary-color--);
-    font-weight: normal;
+    font-weight: 300 ;
+    font-family: "Roboto" , serif;
+
 }
 
 .hero-mobile > a > svg {
@@ -633,7 +636,7 @@ footer > p > svg {
         margin: 50px;
         height: 10vh;
         background: #6e6e6d13;
-        border-radius: 50px;
+        border-radius: 12.5px;
         padding: 0px 50px;
     }
 
@@ -686,7 +689,7 @@ footer > p > svg {
         /* background: plum; */
         background-position: center;
         background-repeat: no-repeat;
-        border-radius: 50px;
+        border-radius: 12.5px;
         background-size: cover;
         box-sizing: border-box;
         gap: 25px;
@@ -710,13 +713,14 @@ footer > p > svg {
         align-items: center;
         justify-content: center;
         /* gap: 150px; */
-        /* background: mediumaquamarine; */
+        background: rgba(148, 5, 5, 0.329);
         width: 100%;
-        border-radius: 50px;
+        border-radius: 12.5px;
         padding: 50px ;
         box-sizing: border-box;
-        border: 1px rgb(83, 9, 9) solid ;
+        border: 1px rgba(83, 9, 9, 0.301) solid ;
         height: calc(100vh - (60vh + 175px));
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.308);
     }
 
     .number {
@@ -730,7 +734,7 @@ footer > p > svg {
         align-items: center;
         justify-content: space-between;
         /* background: khaki; */
-        width: 250px;
+        width: 25vw;
         height: 100px;
         text-align: center;
        
